@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8 рисовалка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <h1>canvas painting</h1>
+
+        <canvas id="canvas" width="1280" height="720" class="canvas-class">
+        </canvas>
+        <!-----/#canvas----->
+        <form action="#" class="form">
+            <div class="form__wrap">
+                <div class="form__block">
+                    <label for="color">Choose color</label>
+                    <input type="color" id="color" class="form__input form__input_color">
+                </div>
+                <!-----/.form__block----->
+                <div class="form__block">
+                    <label for="width">Choose width of Line</label>
+                    <input type="range" id="width" class="form__input" min="1" max="50" step="1" value="3">
+                </div>
+                <!-----/.form__block----->
+            </div>
+            <!-----/.form__wrap----->
+            <button type="button" class="btn">Clear drawing</button>
+        </form>
+        <!-----/.form----->
+    </div>
+    <!-----/.wrapper----->
+
+<script src="model.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
